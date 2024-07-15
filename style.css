@@ -1,33 +1,46 @@
 @charset "UTF-8";
+ /*
+ cores
+ #D9AF62 -1
+ #BFBBB4 -2
+ #8C5108 -3
+ #BF7A26 -4
+ #594842 -5
+ */
+ :root{
+    --cor1: #D9AF62; 
+    --cor2: #BFBBB4;
+    --cor3: #8C5108;
+    --cor4: #BF7A26;
+    --cor5: #594842;
 
+ }
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-
 
 }
-body,html {
+body {
+   
     
-height: 100vh;
-    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif;
+   
+   
+   
+    
 }
 header {
-    background: blanchedalmond url(imagem/sofa-branco.jpg);
-    background-size: cover;
-    background-position: center center;
-    padding: 90px;
-    margin: 2px;
+    background-image: linear-gradient(to top, var(--cor1) ,var(--cor4), var(--cor3));
+    min-height: 150px;
+    
    
 }
+
 nav{ 
 
-    background-color: rgba(47, 38, 56, 0.301);
+    background-color: var(--cor4);
     padding: 10px;
-    margin-right: 10px;
-    text-align: right;
+    box-shadow: 0px 7px 7px rgba(73, 70, 70, 0.445);
     
     
 }
@@ -36,31 +49,58 @@ nav > a{
     text-decoration: none;
     color: rgb(13, 54, 90);
     padding: 3px;
-    margin: 2px;
-    margin-right: 10px;
-    
+    border-radius: 10px;
+    font-weight: bolder;
+    transition-duration: .6s;
+
    
+}
+nav > a:hover{
+    background-color: var(--cor1);
+    color: #594842;
 }
 main {
-    background-color: aquamarine;
-    width: 80vw;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 20px;
+   min-width: 300px;
+   max-width: 1000px;
+   margin: auto;
+   margin-bottom: 30px;
+   padding: 10px;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 10px rgba(88, 86, 86, 0.295);
    
 }
-h1{
-    text-align: left;
-    color: black;
+main h1{
+    
+    color: rgb(0, 0, 0);
     font-size: 1.2em;
+    font-weight: bolder;
     text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.452);
+   
 
 }
-main > div{
-    
+main p{
+    font-variant: small-caps;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+   
+}
+main > div.pessoa{
+    display: block;
+    padding: 5px;
+    background-size: cover;
     text-align: right;
+    background-attachment: fixed;
+    
+   
 }
 footer {
-    width: 500px;
+    background-color: azure;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    
 }
