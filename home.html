@@ -18,31 +18,54 @@
                 <a href="projetos.html"> Projetos</a>
                 
             </nav>
-        
-
     </header>
-    <main>
+    <section>
+        <div class="container">
+            <a class="prev" href="#" onclick="addSlides(-1)">
+                <span>&#10094;</span>
+                <span class="prev-text">Voltar</span>
 
-        <h1>Quem sou</h1>
-      
-        <p>Lorem ipsum dolor sit amet, <br> 
-            consectetur adipisicing. 
-             Sed harum minima aut recusandae saepe, <br> 
-             reprehenderit nulla, <br> 
-             tempore id architecto, dolor repellat magnam quia? <br>Magni voluptatibus <br>
-              asperiores enim! Explicabo, fuga aperiam! Lorem ipsum dolor sit amet, <br>
-              consectetur adipisicing elit. Ut enim suscipit corporis possimus <br>
-               saepe <br> eum voluptatum sunt cupiditate illum debitis temporibus <br>totam in laborum eligendi nisi labore,<br> tenetur praesentium inventore?</p>
-        <div class="pessoa"><img src="imagem/sala-1.jpg" alt=""></div>
+            </a>
 
-        <h2>escritorio</h2>
-        <div>foto <img src="imagem/sala-amarelo.jpg" alt=""></div>
+        </div>
+
+        <div class="slides fade">
+            <img src="imagem/cabelo-01.jpg" alt="">
+            <h2 class="title"> Salao</h2>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
         
-        <p class="final">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus facere corrupti nostrum! Dolorem ipsa in fuga nihil quis doloremque at, neque numquam facere natus. Molestias distinctio eos assumenda porro animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem facere aliquam, ipsa voluptas incidunt error placeat rem nemo praesentium veritatis iure officia doloribus temporibus mollitia saepe! Atque, quidem? Natus, velit.</p>
-        
+        </div>    
 
+            <div class="slides fade">
+                <img src="imagem/cabelo-03.jpg" alt="">
+                <h2 class="title"> Salao</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
+    
+            </div>
 
-    </main>
+            <div class="slides fade">
+                <img src="imagem/cabelo-02.jpg" alt="">
+                <h2 class="title"> Salao</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
+    
+            </div>
+
+            <div class="footer">
+                <button class="button" onclick="addSlides(1)">Próximo</button>
+
+            </div>
+
+         <div class="dot-box">
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+
+         </div>
+           
+
+       
+    </section>
+
     <footer>
         Projeto feito por Jose Huelden
     </footer>
@@ -53,6 +76,6 @@
    
     
 
-    
+    <script src="handle.js"></script>
 </body>
 </html>
