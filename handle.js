@@ -11,10 +11,10 @@ function currentSlides(n) {
 }
 
 function showSlides(n){
-    let slide = document.getElementsByClassName("slides");
+    let slides = document.getElementsByClassName("slides");
     let dots = document.getElementsByClassName("dot");
 
-    if (n > slides.length ) {
+    if (n > slide.length ) {
         index = 1;
     }
 
