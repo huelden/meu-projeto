@@ -22,51 +22,34 @@
     </header>
     <main>
         <div class="container">
-            <a class="prev" href="#" onclick="addSlides(-1)">
-                <span>&#10094;</span>
-                <span class="prev-text">Voltar</span>
-
-            </a>
-
+            <div class="slides fade">
+                <img src="imagem/cabelo-01.jpg" alt="Imagem 1">
+                <div class="title">Cabelo</div>
+                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam repellat dignissimos! Iusto, soluta. Ipsam odio dignissimos animi iure culpa nesciunt, labore reiciendis quis eum a cupiditate officia earum placeat.</div>
+            </div>
+            <div class="slides fade">
+                <img src="imagem/cabelo-02.jpg" alt="Imagem 2">
+                <div class="title">Tratamentos</div>
+                <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem officia laborum exercitationem numquam excepturi a repellendus at voluptas porro facere, nemo ut minus perferendis aperiam voluptatum soluta velit beatae vel!</div>
+            </div>
+            <div class="slides fade">
+                <img src="imagem/cabelo-04.jpg" alt="Imagem 3">
+                <div class="title">Cuidados</div>
+                <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eveniet accusantium, repudiandae unde id totam quasi illo quam asperiores eligendi dolores beatae voluptates recusandae numquam? Libero voluptatibus mollitia voluptas neque.</div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094; Anterior</button>
+            <button class="next" onclick="changeSlide(1)">Próximo &#10095;</button>
+            
+            <div class="dot-box">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            
+            </div>
         </div>
-
-        <div class="slides fade">
-            <img src="imagem/cabelo-01.jpg" alt="">
-            <h2 class="title"> Salao</h2>
-            <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
-        
-        </div>    
-
-            <div class="slides fade">
-                <img src="imagem/cabelo-03.jpg" alt="">
-                <h2 class="title"> Salao</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
-    
-            </div>
-
-            <div class="slides fade">
-                <img src="imagem/cabelo-02.jpg" alt="">
-                <h2 class="title"> Salao</h2>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem natus minima nihil sed omnis, sunt magnam ullam quibusdam provident nemo veritatis debitis hic nisi doloribus, harum dolorem id illum cum.</p>
-    
-            </div>
-
-            <div class="footer">
-                <button class="button" onclick="addSlides(1)">Próximo</button>
-
-            </div>
-
-         <div class="dot-box">
-            <span class="dot" onclick="currentSlides(1)"></span>
-            <span class="dot" onclick="currentSlides(2)"></span>
-            <span class="dot" onclick="currentSlides(3)"></span>
-
-         </div>
-           
-
-       
-    
     </main>
+    
+    
 
 
         
