@@ -16,10 +16,17 @@
 
  }
 * {
+
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor4);
 }
 
 main {
@@ -29,6 +36,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     font-family: 'Times New Roman', Times, serif;
     background-image: linear-gradient(to bottom left,#594842,#BF7A26, #8C5108,#BF7A26,#594842);
    
@@ -94,9 +102,68 @@ main {
 }
 
 img{
-    width: auto;
-    height: 350px;
+    width: 200px;
+    height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 25px;
+
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);/* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
+img:hover{
+    transform: scale(1.05); /* Leve zoom*/
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* sombra intensa*/
+}
+
+/* Para o ponto ativo */
+.active .dot:hover {
+    background-color: #14120e;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(to bottom left, #594842, #BF7A26, #8C5108, #BF7A26, #594842);
+}
+
+
+.prev:hover, .next:hover {
+    background-color: #D9AF62;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    padding: 32px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+
+.slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+
+
 .footer{
     display: flex;
     flex-direction: column;
@@ -231,4 +298,33 @@ section{
     padding: 10px;
 
 }
-    
+.salao{
+    text-align: center;
+}
+
+
+.horario{
+    background-color: var(--cor2);
+    color: var(--cor5);
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.horario h2{
+    font-size: 24px;
+    color: var(--cor5);
+    margin-bottom: 10px;
+}
+
+.horario ul{
+    list-style: none;
+    padding: o;
+}
+.horario li{
+    font-size: 18px;
+    padding: 5px 0;
+}
