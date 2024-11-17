@@ -328,3 +328,46 @@ section{
     font-size: 18px;
     padding: 5px 0;
 }
+.contato {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #25D366; /* Verde típico do WhatsApp */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Cor um pouco mais escura ao passar o mouse */
+}
+.contato {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do botão do Instagram */
+.instagram-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.instagram-btn:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
