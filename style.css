@@ -28,6 +28,36 @@ html, body{
     padding: 0;
     background-color: var(--cor4);
 }
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Ocupa a altura total da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('imagem/salao-01.jpg') no-repeat center center/cover;
+}
+
+/* Adiciona sombra e espaço ao texto para melhor visibilidade */
+.inicio h1, .inicio p {
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+    text-shadow: 0 2px 4px rgba(241, 183, 22, 0.8);
+}
+
+
+/* Ajuste de fundo para dispositivos menores */
+@media (max-width: 768px) {
+    .inicio {
+        background-position: top;
+    }
+}
+
+
+
 
 main {
    
@@ -59,6 +89,7 @@ main {
     height: 600px;
     padding: 32px;
     border-radius: 32px;
+    position: relative;
 
 
 }
@@ -75,6 +106,7 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
     transition: background-color 0.3s ease;
 }
 
@@ -312,6 +344,8 @@ section{
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .horario h2{
@@ -370,4 +404,20 @@ section{
 
 .instagram-btn:hover {
     transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+@media (max-width: 768px) {
+    .inicio {
+        height: 80vh; /* Ajuste para caber em telas pequenas */
+        background-size: cover;
+    }
+    .horario {
+        width: 90%; /* Ajusta a largura em telas pequenas */
+    }
+    img {
+        width: 100px; /* Reduz tamanho das imagens */
+    }
+    .whatsapp-btn, .instagram-btn {
+        font-size: 16px; /* Ajuste tamanho do texto */
+        padding: 10px 20px;
+    }
 }
