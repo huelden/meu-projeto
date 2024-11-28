@@ -13,6 +13,7 @@
     --cor3: #8C5108;
     --cor4: #BF7A26;
     --cor5: #594842;
+    --cor6: #353f33;
 
  }
 * {
@@ -20,13 +21,31 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
+   
+   
 
+
+}
+.logo{
+    font-style: italic;
+    font-size: 60px;
+    text-shadow: 0 2px 4px rgba(17, 16, 12, 0.8);
+}
+p{
+   
+    
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--cor4);
+    background-color: #353f33;
+
+  
+    
+
 }
 .inicio {
     position: relative;
@@ -39,7 +58,7 @@ html, body{
     color: white;
     font-family: 'Arial', sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('imagem/salao-01.jpg') no-repeat center center/cover;
+                url('imagem/8225738-sd_426_240_25fps.mp4') no-repeat center center/cover;
 }
 
 /* Adiciona sombra e espaço ao texto para melhor visibilidade */
@@ -60,7 +79,7 @@ html, body{
 
 
 main {
-   
+    
     width: 100%;
     height: 100vh;
     display: flex;
@@ -69,6 +88,8 @@ main {
     min-height: 100vh;
     font-family: 'Times New Roman', Times, serif;
     background-image: linear-gradient(to bottom left,#594842,#BF7A26, #8C5108,#BF7A26,#594842);
+   
+    
    
 }
     
@@ -104,6 +125,7 @@ main {
     border-radius: 10px;
     font-size: 16px;
     position: absolute;
+    
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
@@ -154,19 +176,11 @@ img:hover{
 .active .dot:hover {
     background-color: #14120e;
 }
-main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-image: linear-gradient(to bottom left, #594842, #BF7A26, #8C5108, #BF7A26, #594842);
-}
+
 
 
 .prev:hover, .next:hover {
-    background-color: #D9AF62;
+    background-color:#D9AF62;
 }
 
 .container{
@@ -249,36 +263,12 @@ header {
    margin: auto;
    padding: 30px;
     display: flex;
-    background-image: linear-gradient(to top, var(--cor1) ,var(--cor4), var(--cor3));
-    min-height: 150px;
+    color: var(--cor1);
+   
     
    
 }
 
-nav{ 
-    display: flex-box;
-    background-color: var(--cor4);
-    margin-top: 79px;
-    padding: 10px;
-    box-shadow: 0px 7px 7px rgba(73, 70, 70, 0.445);
-    
-    
-}
-nav > a{
-    
-    text-decoration: none;
-    color: rgb(13, 54, 90);
-    padding: 3px;
-    border-radius: 10px;
-    font-weight: bolder;
-    transition-duration: .6s;
-
-   
-}
-nav > a:hover{
-    background-color: var(--cor1);
-    color: #594842;
-}
 main {
   
    margin: auto;
@@ -290,7 +280,7 @@ main {
 }
 main h1{
     
-    color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
     font-size: 1.2em;
     font-weight: bolder;
     text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.452);
@@ -304,6 +294,7 @@ main p{
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
+    color: white;
    
 }
 main > div.pessoa{
@@ -324,10 +315,11 @@ footer {
     
 }
 section{
-    background-color: #BF7A26;
+    background-color: #33313133;
     margin: auto;
     margin-bottom: 30px;
     padding: 10px;
+    color: white;
 
 }
 .salao{
@@ -369,12 +361,13 @@ section{
 
 .whatsapp-btn {
     display: inline-block;
-    padding: 12px 24px;
-    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 7px 10px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     background-color: #25D366; /* Verde típico do WhatsApp */
-    border-radius: 8px;
+    border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -391,12 +384,13 @@ section{
 /* Estilo do botão do Instagram */
 .instagram-btn {
     display: inline-block;
-    padding: 12px 24px;
-    font-size: 18px;
+    margin-top: 10px;
+    padding: 7px 10px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -421,3 +415,34 @@ section{
         padding: 10px 20px;
     }
 }
+#map-container {
+    width: 300px; /* largura desejada */
+    height: 200px; /* altura desejada */
+    overflow: hidden;
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .video-container {
+        display: none; /* Oculta o vídeo */
+    }
+    .inicio {
+        background: url('imagem/salao-01.jpg') center center/cover no-repeat;
+    }
+}
+
+
